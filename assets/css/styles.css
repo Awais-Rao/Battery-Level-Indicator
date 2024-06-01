@@ -142,7 +142,6 @@ body {
   background: var(--gradient-color-green);
 }
 
-
 /* Battery charging animation */
 .animated-green {
   background: var(--gradient-color-green);
@@ -199,4 +198,26 @@ body {
 .gradient-color-green,
 .gradient-color-green::after {
   background: var(--gradient-color-green);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .battery__card {
+    zoom: .8;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 430px) {
+  .battery__card {
+    width: 312px;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .battery__card {
+    zoom: 1.5;
+  }
 }
